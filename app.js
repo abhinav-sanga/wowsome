@@ -16,8 +16,8 @@ var index = require('./routes/index');
 var app = express();
 
 var mongoose = require('mongoose');
-//mongoose.connect('mongodb://starktech:starktech55@ds247178.mlab.com:47178/gamezone');
-mongoose.connect('mongodb://127.0.0.1:27017/wowsome');
+mongoose.connect('mongodb://abhinav:abhinav05@ds055575.mlab.com:55575/wowsome');
+//mongoose.connect('mongodb://127.0.0.1:27017/wowsome');
 var db = mongoose.connection;
 db.on('error',console.error);
 db.once('open',function(){
@@ -85,5 +85,12 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+var http = require('http');
+setInterval(function() {
+    http.get("http://wowsome.herokuapp.com/");
+    console.log("executed");
+}, 1200000); // every 20 minutes (1200000)
+
 
 module.exports = app;
