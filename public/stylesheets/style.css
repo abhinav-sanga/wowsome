@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+.authdivs {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#logo{
+  max-height:42px;
+  margin-left: 2em;
+  margin-top:-10px;
+  display:inline-block;
+}
+
+#navb {
+  background-color: transparent;
+  border-bottom-color: darkgray;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.authdivs{
+  padding-top: 3em;
+}
+
+.navbar-inverse .navbar-nav>li>a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.usrinfo {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 4%;
+ }
